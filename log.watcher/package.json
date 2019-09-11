@@ -1,0 +1,15 @@
+{
+  "name": "log.watcher",
+  "version": "1.0.0",
+  "description": "This project will watch a given docker over his logs and will forward it to a given storage",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avishay Ben Shabtai",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.14.18",
+    "typescript": "^3.6.3"
+  }
+}
