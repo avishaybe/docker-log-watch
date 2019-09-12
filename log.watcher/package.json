@@ -9,7 +9,11 @@
   "author": "Avishay Ben Shabtai",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.1",
     "@types/node": "^10.14.18",
     "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
