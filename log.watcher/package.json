@@ -9,11 +9,18 @@
   "author": "Avishay Ben Shabtai",
   "license": "ISC",
   "devDependencies": {
+    "@types/body-parser": "^1.17.1",
     "@types/express": "^4.17.1",
+    "@types/nconf": "^0.10.0",
     "@types/node": "^10.14.18",
+    "@types/node-uuid": "0.0.28",
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nconf": "^0.10.0",
+    "node-docker-api": "^1.1.22",
+    "node-uuid": "^1.4.8"
   }
 }
