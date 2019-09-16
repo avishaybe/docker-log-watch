@@ -30,6 +30,17 @@ app.listen(context.settings.service_http_port, async () => {
     await service.start();
 });
 
-process.on("beforeExit", async () => {
+process.on("exit", async () => {
   await service.stopContainers();
+  process.exit(0);
+});
+
+process.on("SIGTERM", async () => {
+  await service.stopContainers();
+  process.exit(0);
+});
+
+process.on("SIGINT", async () => {
+  await service.stopContainers();
+  process.exit(0);
 });

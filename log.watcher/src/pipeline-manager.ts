@@ -23,7 +23,8 @@ export class PipelineManager {
     public async stopContainers(): Promise<void>{
         const funcName = "stopContainers";
         console.info(PipelineManager._category,funcName,": Started, Going to stop all containers");
-        return await Promise.all(this._knownContainers.map(c => c.stop())).then(() => undefined);
+        await Promise.all(this._knownContainers.map(c => c.stop())).then(() => undefined);
+        this._knownContainers = [];
     }
 
     public async handleStartNewPipeline(req: any): Promise<void>{
